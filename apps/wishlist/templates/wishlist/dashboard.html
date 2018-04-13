@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Wish List</title>
+</head>
+<body>
+    <a href="/logout">Logout</a>
+    <h2>Hello, {{request.session.user_name}}</h2>
+    <p>Your Wish List</p>
+    <table>
+        <thead>
+            <th>Item</th>
+            <th>Added by</th>
+            <th>Date Added</th>
+            <th>Action</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{info.name}}Name</td>
+                <td>{{info.user}}User</td>
+                <td>{{info.created_at}}Created at</td>
+                <td>actions</td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <thead>
+            <th>Item</th>
+            <th>Added by</th>
+            <th>Date Added</th>
+            <th>Action</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Item Placeholder</td>
+                <td>Added by (user added placeholder)</td>
+                <td>Date Added</td>
+                <td>Actions</td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="/additem">Add Item</a>
+</body>
+</html>
